@@ -1,0 +1,1069 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251D32FA2A9D943D00FD0351 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D32F92A9D943D00FD0351 /* SettingViewController.swift */; };
+		251D32FD2A9D95AF00FD0351 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D32FC2A9D95AF00FD0351 /* SettingTableViewCell.swift */; };
+		251D33002A9DAB9C00FD0351 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D32FF2A9DAB9C00FD0351 /* UserManager.swift */; };
+		251D33032A9DC68E00FD0351 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33022A9DC68E00FD0351 /* StoreManager.swift */; };
+		251D33052A9ED50300FD0351 /* LogInOrSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33042A9ED50300FD0351 /* LogInOrSignUpView.swift */; };
+		251D33072A9ED91900FD0351 /* LogInOrSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33062A9ED91900FD0351 /* LogInOrSignUpViewController.swift */; };
+		251D33092A9EDD6600FD0351 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33082A9EDD6600FD0351 /* SignUpView.swift */; };
+		251D330B2A9EDE4700FD0351 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D330A2A9EDE4700FD0351 /* SignUpViewController.swift */; };
+		251D330E2AA5994C00FD0351 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D330D2AA5994C00FD0351 /* String+.swift */; };
+		251D33102AA5B34E00FD0351 /* EmailLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D330F2AA5B34E00FD0351 /* EmailLogInViewController.swift */; };
+		251D33122AA5B36600FD0351 /* EmailLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33112AA5B36600FD0351 /* EmailLogInView.swift */; };
+		251D33162AA7CD0B00FD0351 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33152AA7CD0B00FD0351 /* UIImage+.swift */; };
+		251D33182AA7CDCD00FD0351 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33172AA7CDCD00FD0351 /* UIImageView+.swift */; };
+		251D333B2AA88A3900FD0351 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D333A2AA88A3900FD0351 /* StorageManager.swift */; };
+		251D33412AAF3CED00FD0351 /* JGProgressHUD+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D33402AAF3CED00FD0351 /* JGProgressHUD+.swift */; };
+		252B5FB62A84D08A001ED70F /* TrainFareDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FB52A84D08A001ED70F /* TrainFareDataModel.swift */; };
+		252B5FB82A861FEB001ED70F /* TrainLiveBoardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FB72A861FEB001ED70F /* TrainLiveBoardDataModel.swift */; };
+		252B5FC02A8C7A90001ED70F /* Liz_TRATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FBF2A8C7A90001ED70F /* Liz_TRATests.swift */; };
+		252B5FCA2A945FA8001ED70F /* TrainNumberDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FC92A945FA8001ED70F /* TrainNumberDetailTableViewCell.swift */; };
+		252B5FCD2A94640E001ED70F /* TrainNumberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FCC2A94640E001ED70F /* TrainNumberDetailViewController.swift */; };
+		252B5FCF2A948FF7001ED70F /* TrainNoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FCE2A948FF7001ED70F /* TrainNoDataModel.swift */; };
+		252B5FD12A94AEE3001ED70F /* TrainNumberDetailSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FD02A94AEE3001ED70F /* TrainNumberDetailSectionHeaderView.swift */; };
+		252B5FD32A94C69F001ED70F /* StationLiveBoardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FD22A94C69F001ED70F /* StationLiveBoardDataModel.swift */; };
+		252B5FD62A95DFFD001ED70F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FD52A95DFFD001ED70F /* ProfileViewController.swift */; };
+		252B5FD82A9643D1001ED70F /* StationScheduleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FD72A9643D0001ED70F /* StationScheduleDataModel.swift */; };
+		252B5FDB2A97058F001ED70F /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FDA2A97058F001ED70F /* ProfileHeaderView.swift */; };
+		252B5FDE2A9731E2001ED70F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FDD2A9731E2001ED70F /* LoginView.swift */; };
+		252B5FE12A9732C1001ED70F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FE02A9732C1001ED70F /* LoginViewController.swift */; };
+		252B5FE52A9888CB001ED70F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252B5FE42A9888CB001ED70F /* GoogleService-Info.plist */; };
+		252B5FEB2A98BA16001ED70F /* AccountDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FEA2A98BA16001ED70F /* AccountDataModel.swift */; };
+		252B5FEF2A99F9A8001ED70F /* BodyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FEE2A99F9A8001ED70F /* BodyCollectionViewCell.swift */; };
+		252B5FF12A99FA23001ED70F /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FF02A99FA23001ED70F /* UICollectionView+.swift */; };
+		252B5FF52A9B1B29001ED70F /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FF42A9B1B29001ED70F /* MyProfileViewController.swift */; };
+		252B5FF72A9B1C5E001ED70F /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FF62A9B1C5E001ED70F /* PhotoTableViewCell.swift */; };
+		252B5FF92A9B218E001ED70F /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FF82A9B218E001ED70F /* NameTableViewCell.swift */; };
+		252B5FFB2A9B346B001ED70F /* EditNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FFA2A9B346B001ED70F /* EditNameView.swift */; };
+		252B5FFD2A9B36C3001ED70F /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252B5FFC2A9B36C3001ED70F /* EditNameViewController.swift */; };
+		255FB1342A593B5300C876F8 /* TrainScheduleInquiryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1332A593B5300C876F8 /* TrainScheduleInquiryResultViewController.swift */; };
+		255FB1362A593CE200C876F8 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1352A593CE200C876F8 /* UITableView+.swift */; };
+		255FB1382A5955AD00C876F8 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1372A5955AD00C876F8 /* UIScreen+.swift */; };
+		255FB13C2A5A9AE700C876F8 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB13B2A5A9AE700C876F8 /* StationData.swift */; };
+		255FB1412A5AAC4C00C876F8 /* StationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1402A5AAC4C00C876F8 /* StationSelectionView.swift */; };
+		255FB1442A5B902900C876F8 /* StationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1432A5B902900C876F8 /* StationSelectionViewController.swift */; };
+		255FB1462A5B924100C876F8 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1452A5B924100C876F8 /* CityTableViewCell.swift */; };
+		255FB1482A5B948E00C876F8 /* StationNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1472A5B948E00C876F8 /* StationNameTableViewCell.swift */; };
+		255FB14B2A5CFB5100C876F8 /* Liz-TRA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1492A5CFB5100C876F8 /* Liz-TRA.xcdatamodeld */; };
+		255FB1712A5D3AA000C876F8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1702A5D3AA000C876F8 /* CoreDataManager.swift */; };
+		255FB1732A5D527B00C876F8 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1722A5D527B00C876F8 /* Date+.swift */; };
+		255FB1762A5D643300C876F8 /* TrainScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB1752A5D643300C876F8 /* TrainScheduleManager.swift */; };
+		255FB19D2A5FE0F700C876F8 /* DateAndTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB19C2A5FE0F700C876F8 /* DateAndTimeView.swift */; };
+		255FB1A02A5FE65300C876F8 /* DateAndTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FB19F2A5FE65300C876F8 /* DateAndTimeViewController.swift */; };
+		257833192A7CCEA300E34AD4 /* TrainScheduleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257833182A7CCEA300E34AD4 /* TrainScheduleDataModel.swift */; };
+		2578331B2A7CDB1900E34AD4 /* JSONDecoder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578331A2A7CDB1900E34AD4 /* JSONDecoder+.swift */; };
+		258044FC2A57032E00572A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FB2A57032E00572A76 /* AppDelegate.swift */; };
+		258044FE2A57032E00572A76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FD2A57032E00572A76 /* SceneDelegate.swift */; };
+		258045002A57032E00572A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FF2A57032E00572A76 /* ViewController.swift */; };
+		258045032A57032E00572A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258045012A57032E00572A76 /* Main.storyboard */; };
+		258045052A57033000572A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 258045042A57033000572A76 /* Assets.xcassets */; };
+		258045082A57033000572A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258045062A57033000572A76 /* LaunchScreen.storyboard */; };
+		258045122A57080200572A76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258045112A57080200572A76 /* HomeViewController.swift */; };
+		258045142A570FB800572A76 /* TRATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258045132A570FB800572A76 /* TRATabBarController.swift */; };
+		258045182A57165100572A76 /* TrainScheduleInquiryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258045172A57165100572A76 /* TrainScheduleInquiryView.swift */; };
+		2580451B2A5821E900572A76 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580451A2A5821E900572A76 /* UIView+.swift */; };
+		2580451D2A58271B00572A76 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580451C2A58271B00572A76 /* UIColor+.swift */; };
+		258045202A58F06B00572A76 /* TrainScheduleInquiryResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580451F2A58F06B00572A76 /* TrainScheduleInquiryResultTableViewCell.swift */; };
+		25CCC2992A67D84100136F82 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CCC2982A67D84100136F82 /* TokenManager.swift */; };
+		25CCC29B2A67DD5D00136F82 /* TokenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CCC29A2A67DD5D00136F82 /* TokenDataModel.swift */; };
+		80D8BFB795969AF3B4B82CD3 /* Pods_Liz_TRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25EC7FC913C4D77C8C66E82C /* Pods_Liz_TRA.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		252B5FC12A8C7A90001ED70F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 258044F02A57032E00572A76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 258044F72A57032E00572A76;
+			remoteInfo = "Liz-TRA";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		251D32F92A9D943D00FD0351 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		251D32FC2A9D95AF00FD0351 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		251D32FF2A9DAB9C00FD0351 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		251D33022A9DC68E00FD0351 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		251D33042A9ED50300FD0351 /* LogInOrSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInOrSignUpView.swift; sourceTree = "<group>"; };
+		251D33062A9ED91900FD0351 /* LogInOrSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInOrSignUpViewController.swift; sourceTree = "<group>"; };
+		251D33082A9EDD6600FD0351 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		251D330A2A9EDE4700FD0351 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		251D330C2AA033EF00FD0351 /* Liz-TRA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Liz-TRA.entitlements"; sourceTree = "<group>"; };
+		251D330D2AA5994C00FD0351 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		251D330F2AA5B34E00FD0351 /* EmailLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLogInViewController.swift; sourceTree = "<group>"; };
+		251D33112AA5B36600FD0351 /* EmailLogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLogInView.swift; sourceTree = "<group>"; };
+		251D33152AA7CD0B00FD0351 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		251D33172AA7CDCD00FD0351 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		251D333A2AA88A3900FD0351 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		251D33402AAF3CED00FD0351 /* JGProgressHUD+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JGProgressHUD+.swift"; sourceTree = "<group>"; };
+		252B5FB52A84D08A001ED70F /* TrainFareDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainFareDataModel.swift; sourceTree = "<group>"; };
+		252B5FB72A861FEB001ED70F /* TrainLiveBoardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainLiveBoardDataModel.swift; sourceTree = "<group>"; };
+		252B5FBD2A8C7A90001ED70F /* Liz-TRATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Liz-TRATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		252B5FBF2A8C7A90001ED70F /* Liz_TRATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liz_TRATests.swift; sourceTree = "<group>"; };
+		252B5FC92A945FA8001ED70F /* TrainNumberDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainNumberDetailTableViewCell.swift; sourceTree = "<group>"; };
+		252B5FCC2A94640E001ED70F /* TrainNumberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainNumberDetailViewController.swift; sourceTree = "<group>"; };
+		252B5FCE2A948FF7001ED70F /* TrainNoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainNoDataModel.swift; sourceTree = "<group>"; };
+		252B5FD02A94AEE3001ED70F /* TrainNumberDetailSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainNumberDetailSectionHeaderView.swift; sourceTree = "<group>"; };
+		252B5FD22A94C69F001ED70F /* StationLiveBoardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLiveBoardDataModel.swift; sourceTree = "<group>"; };
+		252B5FD52A95DFFD001ED70F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		252B5FD72A9643D0001ED70F /* StationScheduleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationScheduleDataModel.swift; sourceTree = "<group>"; };
+		252B5FDA2A97058F001ED70F /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		252B5FDD2A9731E2001ED70F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		252B5FE02A9732C1001ED70F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		252B5FE42A9888CB001ED70F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		252B5FEA2A98BA16001ED70F /* AccountDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataModel.swift; sourceTree = "<group>"; };
+		252B5FEE2A99F9A8001ED70F /* BodyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCollectionViewCell.swift; sourceTree = "<group>"; };
+		252B5FF02A99FA23001ED70F /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		252B5FF42A9B1B29001ED70F /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		252B5FF62A9B1C5E001ED70F /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		252B5FF82A9B218E001ED70F /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		252B5FFA2A9B346B001ED70F /* EditNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameView.swift; sourceTree = "<group>"; };
+		252B5FFC2A9B36C3001ED70F /* EditNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
+		255FB1332A593B5300C876F8 /* TrainScheduleInquiryResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainScheduleInquiryResultViewController.swift; sourceTree = "<group>"; };
+		255FB1352A593CE200C876F8 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		255FB1372A5955AD00C876F8 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		255FB13B2A5A9AE700C876F8 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		255FB1402A5AAC4C00C876F8 /* StationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionView.swift; sourceTree = "<group>"; };
+		255FB1432A5B902900C876F8 /* StationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionViewController.swift; sourceTree = "<group>"; };
+		255FB1452A5B924100C876F8 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		255FB1472A5B948E00C876F8 /* StationNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationNameTableViewCell.swift; sourceTree = "<group>"; };
+		255FB14A2A5CFB5100C876F8 /* Liz-TRA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Liz-TRA.xcdatamodel"; sourceTree = "<group>"; };
+		255FB1702A5D3AA000C876F8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		255FB1722A5D527B00C876F8 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		255FB1752A5D643300C876F8 /* TrainScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainScheduleManager.swift; sourceTree = "<group>"; };
+		255FB19C2A5FE0F700C876F8 /* DateAndTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeView.swift; sourceTree = "<group>"; };
+		255FB19F2A5FE65300C876F8 /* DateAndTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeViewController.swift; sourceTree = "<group>"; };
+		257833182A7CCEA300E34AD4 /* TrainScheduleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainScheduleDataModel.swift; sourceTree = "<group>"; };
+		2578331A2A7CDB1900E34AD4 /* JSONDecoder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+.swift"; sourceTree = "<group>"; };
+		258044F82A57032E00572A76 /* Liz-TRA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liz-TRA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		258044FB2A57032E00572A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		258044FD2A57032E00572A76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		258044FF2A57032E00572A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		258045022A57032E00572A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		258045042A57033000572A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		258045072A57033000572A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		258045092A57033000572A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258045112A57080200572A76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		258045132A570FB800572A76 /* TRATabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRATabBarController.swift; sourceTree = "<group>"; };
+		258045172A57165100572A76 /* TrainScheduleInquiryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainScheduleInquiryView.swift; sourceTree = "<group>"; };
+		2580451A2A5821E900572A76 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		2580451C2A58271B00572A76 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		2580451F2A58F06B00572A76 /* TrainScheduleInquiryResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainScheduleInquiryResultTableViewCell.swift; sourceTree = "<group>"; };
+		25CCC2982A67D84100136F82 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		25CCC29A2A67DD5D00136F82 /* TokenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDataModel.swift; sourceTree = "<group>"; };
+		25EC7FC913C4D77C8C66E82C /* Pods_Liz_TRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liz_TRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D47D9A6FAEBC33C42B182ECA /* Pods-Liz-TRA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liz-TRA.debug.xcconfig"; path = "Target Support Files/Pods-Liz-TRA/Pods-Liz-TRA.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A4547B019302D2CA04FA61 /* Pods-Liz-TRA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liz-TRA.release.xcconfig"; path = "Target Support Files/Pods-Liz-TRA/Pods-Liz-TRA.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		252B5FBA2A8C7A90001ED70F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258044F52A57032E00572A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D8BFB795969AF3B4B82CD3 /* Pods_Liz_TRA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251D32F82A9D93F400FD0351 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				251D32F92A9D943D00FD0351 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		251D32FB2A9D949800FD0351 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				251D32FC2A9D95AF00FD0351 /* SettingTableViewCell.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		251D32FE2A9DAB8C00FD0351 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				251D32FF2A9DAB9C00FD0351 /* UserManager.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		251D33012A9DC67300FD0351 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				251D33022A9DC68E00FD0351 /* StoreManager.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		251D33392AA88A1F00FD0351 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				251D333A2AA88A3900FD0351 /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		251D333F2AAF3CC500FD0351 /* Third Party SDK Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				251D33402AAF3CED00FD0351 /* JGProgressHUD+.swift */,
+			);
+			path = "Third Party SDK Wrapper";
+			sourceTree = "<group>";
+		};
+		251D33432AB02F7B00FD0351 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		252B5FBE2A8C7A90001ED70F /* Liz-TRATests */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FBF2A8C7A90001ED70F /* Liz_TRATests.swift */,
+			);
+			path = "Liz-TRATests";
+			sourceTree = "<group>";
+		};
+		252B5FC62A945BAA001ED70F /* TrainNumberDetail */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FC92A945FA8001ED70F /* TrainNumberDetailTableViewCell.swift */,
+				252B5FD02A94AEE3001ED70F /* TrainNumberDetailSectionHeaderView.swift */,
+			);
+			path = TrainNumberDetail;
+			sourceTree = "<group>";
+		};
+		252B5FCB2A946397001ED70F /* TrainNumberDetail */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FCC2A94640E001ED70F /* TrainNumberDetailViewController.swift */,
+			);
+			path = TrainNumberDetail;
+			sourceTree = "<group>";
+		};
+		252B5FD42A95DFBF001ED70F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FD52A95DFFD001ED70F /* ProfileViewController.swift */,
+				252B5FDF2A9732A1001ED70F /* Login */,
+				252B5FF32A9B1AEE001ED70F /* MyProfile */,
+				251D32F82A9D93F400FD0351 /* Setting */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		252B5FD92A970538001ED70F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FDA2A97058F001ED70F /* ProfileHeaderView.swift */,
+				252B5FEE2A99F9A8001ED70F /* BodyCollectionViewCell.swift */,
+				252B5FDC2A9731B0001ED70F /* Login */,
+				252B5FF22A9B1A7A001ED70F /* MyProfile */,
+				251D32FB2A9D949800FD0351 /* Setting */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		252B5FDC2A9731B0001ED70F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FDD2A9731E2001ED70F /* LoginView.swift */,
+				251D33042A9ED50300FD0351 /* LogInOrSignUpView.swift */,
+				251D33082A9EDD6600FD0351 /* SignUpView.swift */,
+				251D33112AA5B36600FD0351 /* EmailLogInView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		252B5FDF2A9732A1001ED70F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FE02A9732C1001ED70F /* LoginViewController.swift */,
+				251D33062A9ED91900FD0351 /* LogInOrSignUpViewController.swift */,
+				251D330A2A9EDE4700FD0351 /* SignUpViewController.swift */,
+				251D330F2AA5B34E00FD0351 /* EmailLogInViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		252B5FE92A98B9FC001ED70F /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FEA2A98BA16001ED70F /* AccountDataModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		252B5FF22A9B1A7A001ED70F /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FF62A9B1C5E001ED70F /* PhotoTableViewCell.swift */,
+				252B5FF82A9B218E001ED70F /* NameTableViewCell.swift */,
+				252B5FFA2A9B346B001ED70F /* EditNameView.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		252B5FF32A9B1AEE001ED70F /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				252B5FF42A9B1B29001ED70F /* MyProfileViewController.swift */,
+				252B5FFC2A9B36C3001ED70F /* EditNameViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		255FB1302A59390C00C876F8 /* TrainScheduleInquiryResult */ = {
+			isa = PBXGroup;
+			children = (
+				255FB1332A593B5300C876F8 /* TrainScheduleInquiryResultViewController.swift */,
+				252B5FCB2A946397001ED70F /* TrainNumberDetail */,
+			);
+			path = TrainScheduleInquiryResult;
+			sourceTree = "<group>";
+		};
+		255FB1392A5A9A3A00C876F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				251D33392AA88A1F00FD0351 /* Storage */,
+				251D33012A9DC67300FD0351 /* Store */,
+				251D32FE2A9DAB8C00FD0351 /* User */,
+				252B5FE92A98B9FC001ED70F /* Account */,
+				25CCC2972A67C93C00136F82 /* Token */,
+				255FB1742A5D640A00C876F8 /* TrainSchedule */,
+				255FB16F2A5D3A8000C876F8 /* CoreData */,
+				255FB13A2A5A9A7E00C876F8 /* Station */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		255FB13A2A5A9A7E00C876F8 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				255FB13B2A5A9AE700C876F8 /* StationData.swift */,
+			);
+			path = Station;
+			sourceTree = "<group>";
+		};
+		255FB13D2A5AABD800C876F8 /* stationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				255FB1402A5AAC4C00C876F8 /* StationSelectionView.swift */,
+				255FB1452A5B924100C876F8 /* CityTableViewCell.swift */,
+				255FB1472A5B948E00C876F8 /* StationNameTableViewCell.swift */,
+			);
+			path = stationSelection;
+			sourceTree = "<group>";
+		};
+		255FB1422A5B8FC300C876F8 /* stationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				255FB1432A5B902900C876F8 /* StationSelectionViewController.swift */,
+			);
+			path = stationSelection;
+			sourceTree = "<group>";
+		};
+		255FB16F2A5D3A8000C876F8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				255FB1702A5D3AA000C876F8 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		255FB1742A5D640A00C876F8 /* TrainSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				255FB1752A5D643300C876F8 /* TrainScheduleManager.swift */,
+				257833182A7CCEA300E34AD4 /* TrainScheduleDataModel.swift */,
+				252B5FB52A84D08A001ED70F /* TrainFareDataModel.swift */,
+				252B5FB72A861FEB001ED70F /* TrainLiveBoardDataModel.swift */,
+				252B5FCE2A948FF7001ED70F /* TrainNoDataModel.swift */,
+				252B5FD22A94C69F001ED70F /* StationLiveBoardDataModel.swift */,
+				252B5FD72A9643D0001ED70F /* StationScheduleDataModel.swift */,
+			);
+			path = TrainSchedule;
+			sourceTree = "<group>";
+		};
+		255FB19E2A5FE63000C876F8 /* DateAndTime */ = {
+			isa = PBXGroup;
+			children = (
+				255FB19F2A5FE65300C876F8 /* DateAndTimeViewController.swift */,
+			);
+			path = DateAndTime;
+			sourceTree = "<group>";
+		};
+		258044EF2A57032E00572A76 = {
+			isa = PBXGroup;
+			children = (
+				258044FA2A57032E00572A76 /* Liz-TRA */,
+				252B5FBE2A8C7A90001ED70F /* Liz-TRATests */,
+				258044F92A57032E00572A76 /* Products */,
+				B15118BC1C13797F8DEF43BE /* Pods */,
+				F0CF212BE206A4091381197D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		258044F92A57032E00572A76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				258044F82A57032E00572A76 /* Liz-TRA.app */,
+				252B5FBD2A8C7A90001ED70F /* Liz-TRATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		258044FA2A57032E00572A76 /* Liz-TRA */ = {
+			isa = PBXGroup;
+			children = (
+				251D330C2AA033EF00FD0351 /* Liz-TRA.entitlements */,
+				258045192A5821D100572A76 /* Extension */,
+				255FB1392A5A9A3A00C876F8 /* Model */,
+				258045152A57132D00572A76 /* View */,
+				2580450F2A57077B00572A76 /* Controller */,
+				251D33432AB02F7B00FD0351 /* Other */,
+				258044FB2A57032E00572A76 /* AppDelegate.swift */,
+				258044FD2A57032E00572A76 /* SceneDelegate.swift */,
+				258044FF2A57032E00572A76 /* ViewController.swift */,
+				258045012A57032E00572A76 /* Main.storyboard */,
+				258045042A57033000572A76 /* Assets.xcassets */,
+				258045062A57033000572A76 /* LaunchScreen.storyboard */,
+				258045092A57033000572A76 /* Info.plist */,
+				252B5FE42A9888CB001ED70F /* GoogleService-Info.plist */,
+				255FB1492A5CFB5100C876F8 /* Liz-TRA.xcdatamodeld */,
+			);
+			path = "Liz-TRA";
+			sourceTree = "<group>";
+		};
+		2580450F2A57077B00572A76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				258045132A570FB800572A76 /* TRATabBarController.swift */,
+				258045102A57079E00572A76 /* Home */,
+				252B5FD42A95DFBF001ED70F /* Profile */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		258045102A57079E00572A76 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				258045112A57080200572A76 /* HomeViewController.swift */,
+				255FB19E2A5FE63000C876F8 /* DateAndTime */,
+				255FB1302A59390C00C876F8 /* TrainScheduleInquiryResult */,
+				255FB1422A5B8FC300C876F8 /* stationSelection */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		258045152A57132D00572A76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				258045162A57163C00572A76 /* Home */,
+				252B5FD92A970538001ED70F /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		258045162A57163C00572A76 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				258045172A57165100572A76 /* TrainScheduleInquiryView.swift */,
+				255FB19C2A5FE0F700C876F8 /* DateAndTimeView.swift */,
+				2580451E2A58ED0200572A76 /* TrainScheduleInquiryResult */,
+				255FB13D2A5AABD800C876F8 /* stationSelection */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		258045192A5821D100572A76 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				251D333F2AAF3CC500FD0351 /* Third Party SDK Wrapper */,
+				2580451A2A5821E900572A76 /* UIView+.swift */,
+				2580451C2A58271B00572A76 /* UIColor+.swift */,
+				255FB1352A593CE200C876F8 /* UITableView+.swift */,
+				255FB1372A5955AD00C876F8 /* UIScreen+.swift */,
+				255FB1722A5D527B00C876F8 /* Date+.swift */,
+				2578331A2A7CDB1900E34AD4 /* JSONDecoder+.swift */,
+				252B5FF02A99FA23001ED70F /* UICollectionView+.swift */,
+				251D330D2AA5994C00FD0351 /* String+.swift */,
+				251D33152AA7CD0B00FD0351 /* UIImage+.swift */,
+				251D33172AA7CDCD00FD0351 /* UIImageView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2580451E2A58ED0200572A76 /* TrainScheduleInquiryResult */ = {
+			isa = PBXGroup;
+			children = (
+				2580451F2A58F06B00572A76 /* TrainScheduleInquiryResultTableViewCell.swift */,
+				252B5FC62A945BAA001ED70F /* TrainNumberDetail */,
+			);
+			path = TrainScheduleInquiryResult;
+			sourceTree = "<group>";
+		};
+		25CCC2972A67C93C00136F82 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				25CCC2982A67D84100136F82 /* TokenManager.swift */,
+				25CCC29A2A67DD5D00136F82 /* TokenDataModel.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		B15118BC1C13797F8DEF43BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D47D9A6FAEBC33C42B182ECA /* Pods-Liz-TRA.debug.xcconfig */,
+				E8A4547B019302D2CA04FA61 /* Pods-Liz-TRA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0CF212BE206A4091381197D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25EC7FC913C4D77C8C66E82C /* Pods_Liz_TRA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		252B5FBC2A8C7A90001ED70F /* Liz-TRATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 252B5FC32A8C7A90001ED70F /* Build configuration list for PBXNativeTarget "Liz-TRATests" */;
+			buildPhases = (
+				252B5FB92A8C7A90001ED70F /* Sources */,
+				252B5FBA2A8C7A90001ED70F /* Frameworks */,
+				252B5FBB2A8C7A90001ED70F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				252B5FC22A8C7A90001ED70F /* PBXTargetDependency */,
+			);
+			name = "Liz-TRATests";
+			productName = "Liz-TRATests";
+			productReference = 252B5FBD2A8C7A90001ED70F /* Liz-TRATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		258044F72A57032E00572A76 /* Liz-TRA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2580450C2A57033000572A76 /* Build configuration list for PBXNativeTarget "Liz-TRA" */;
+			buildPhases = (
+				AAD0B62FF1263DBA0E0E47A1 /* [CP] Check Pods Manifest.lock */,
+				258044F42A57032E00572A76 /* Sources */,
+				258044F52A57032E00572A76 /* Frameworks */,
+				258044F62A57032E00572A76 /* Resources */,
+				DF1C1E2C0C18D76F6A7D4D90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Liz-TRA";
+			productName = "Liz-TRA";
+			productReference = 258044F82A57032E00572A76 /* Liz-TRA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		258044F02A57032E00572A76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					252B5FBC2A8C7A90001ED70F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 258044F72A57032E00572A76;
+					};
+					258044F72A57032E00572A76 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 258044F32A57032E00572A76 /* Build configuration list for PBXProject "Liz-TRA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 258044EF2A57032E00572A76;
+			productRefGroup = 258044F92A57032E00572A76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				258044F72A57032E00572A76 /* Liz-TRA */,
+				252B5FBC2A8C7A90001ED70F /* Liz-TRATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		252B5FBB2A8C7A90001ED70F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258044F62A57032E00572A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258045082A57033000572A76 /* LaunchScreen.storyboard in Resources */,
+				252B5FE52A9888CB001ED70F /* GoogleService-Info.plist in Resources */,
+				258045052A57033000572A76 /* Assets.xcassets in Resources */,
+				258045032A57032E00572A76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAD0B62FF1263DBA0E0E47A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Liz-TRA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1C1E2C0C18D76F6A7D4D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liz-TRA/Pods-Liz-TRA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liz-TRA/Pods-Liz-TRA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liz-TRA/Pods-Liz-TRA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		252B5FB92A8C7A90001ED70F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252B5FC02A8C7A90001ED70F /* Liz_TRATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258044F42A57032E00572A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251D33102AA5B34E00FD0351 /* EmailLogInViewController.swift in Sources */,
+				258045002A57032E00572A76 /* ViewController.swift in Sources */,
+				252B5FEB2A98BA16001ED70F /* AccountDataModel.swift in Sources */,
+				25CCC2992A67D84100136F82 /* TokenManager.swift in Sources */,
+				252B5FB82A861FEB001ED70F /* TrainLiveBoardDataModel.swift in Sources */,
+				252B5FEF2A99F9A8001ED70F /* BodyCollectionViewCell.swift in Sources */,
+				251D33052A9ED50300FD0351 /* LogInOrSignUpView.swift in Sources */,
+				252B5FFD2A9B36C3001ED70F /* EditNameViewController.swift in Sources */,
+				252B5FB62A84D08A001ED70F /* TrainFareDataModel.swift in Sources */,
+				2580451D2A58271B00572A76 /* UIColor+.swift in Sources */,
+				252B5FFB2A9B346B001ED70F /* EditNameView.swift in Sources */,
+				257833192A7CCEA300E34AD4 /* TrainScheduleDataModel.swift in Sources */,
+				258044FC2A57032E00572A76 /* AppDelegate.swift in Sources */,
+				252B5FF52A9B1B29001ED70F /* MyProfileViewController.swift in Sources */,
+				255FB1712A5D3AA000C876F8 /* CoreDataManager.swift in Sources */,
+				25CCC29B2A67DD5D00136F82 /* TokenDataModel.swift in Sources */,
+				255FB14B2A5CFB5100C876F8 /* Liz-TRA.xcdatamodeld in Sources */,
+				251D33092A9EDD6600FD0351 /* SignUpView.swift in Sources */,
+				255FB13C2A5A9AE700C876F8 /* StationData.swift in Sources */,
+				251D32FD2A9D95AF00FD0351 /* SettingTableViewCell.swift in Sources */,
+				255FB1A02A5FE65300C876F8 /* DateAndTimeViewController.swift in Sources */,
+				251D33002A9DAB9C00FD0351 /* UserManager.swift in Sources */,
+				251D333B2AA88A3900FD0351 /* StorageManager.swift in Sources */,
+				258045202A58F06B00572A76 /* TrainScheduleInquiryResultTableViewCell.swift in Sources */,
+				251D33412AAF3CED00FD0351 /* JGProgressHUD+.swift in Sources */,
+				251D33122AA5B36600FD0351 /* EmailLogInView.swift in Sources */,
+				251D33182AA7CDCD00FD0351 /* UIImageView+.swift in Sources */,
+				252B5FCD2A94640E001ED70F /* TrainNumberDetailViewController.swift in Sources */,
+				255FB1732A5D527B00C876F8 /* Date+.swift in Sources */,
+				252B5FCA2A945FA8001ED70F /* TrainNumberDetailTableViewCell.swift in Sources */,
+				252B5FDE2A9731E2001ED70F /* LoginView.swift in Sources */,
+				251D330E2AA5994C00FD0351 /* String+.swift in Sources */,
+				255FB1442A5B902900C876F8 /* StationSelectionViewController.swift in Sources */,
+				252B5FD12A94AEE3001ED70F /* TrainNumberDetailSectionHeaderView.swift in Sources */,
+				255FB1362A593CE200C876F8 /* UITableView+.swift in Sources */,
+				251D33032A9DC68E00FD0351 /* StoreManager.swift in Sources */,
+				252B5FD82A9643D1001ED70F /* StationScheduleDataModel.swift in Sources */,
+				252B5FF92A9B218E001ED70F /* NameTableViewCell.swift in Sources */,
+				255FB1482A5B948E00C876F8 /* StationNameTableViewCell.swift in Sources */,
+				2580451B2A5821E900572A76 /* UIView+.swift in Sources */,
+				258044FE2A57032E00572A76 /* SceneDelegate.swift in Sources */,
+				252B5FE12A9732C1001ED70F /* LoginViewController.swift in Sources */,
+				251D33072A9ED91900FD0351 /* LogInOrSignUpViewController.swift in Sources */,
+				2578331B2A7CDB1900E34AD4 /* JSONDecoder+.swift in Sources */,
+				255FB1382A5955AD00C876F8 /* UIScreen+.swift in Sources */,
+				252B5FCF2A948FF7001ED70F /* TrainNoDataModel.swift in Sources */,
+				258045182A57165100572A76 /* TrainScheduleInquiryView.swift in Sources */,
+				251D32FA2A9D943D00FD0351 /* SettingViewController.swift in Sources */,
+				252B5FF72A9B1C5E001ED70F /* PhotoTableViewCell.swift in Sources */,
+				258045142A570FB800572A76 /* TRATabBarController.swift in Sources */,
+				251D330B2A9EDE4700FD0351 /* SignUpViewController.swift in Sources */,
+				252B5FD32A94C69F001ED70F /* StationLiveBoardDataModel.swift in Sources */,
+				255FB1762A5D643300C876F8 /* TrainScheduleManager.swift in Sources */,
+				255FB19D2A5FE0F700C876F8 /* DateAndTimeView.swift in Sources */,
+				255FB1342A593B5300C876F8 /* TrainScheduleInquiryResultViewController.swift in Sources */,
+				255FB1412A5AAC4C00C876F8 /* StationSelectionView.swift in Sources */,
+				252B5FDB2A97058F001ED70F /* ProfileHeaderView.swift in Sources */,
+				252B5FD62A95DFFD001ED70F /* ProfileViewController.swift in Sources */,
+				255FB1462A5B924100C876F8 /* CityTableViewCell.swift in Sources */,
+				251D33162AA7CD0B00FD0351 /* UIImage+.swift in Sources */,
+				252B5FF12A99FA23001ED70F /* UICollectionView+.swift in Sources */,
+				258045122A57080200572A76 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		252B5FC22A8C7A90001ED70F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 258044F72A57032E00572A76 /* Liz-TRA */;
+			targetProxy = 252B5FC12A8C7A90001ED70F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		258045012A57032E00572A76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258045022A57032E00572A76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		258045062A57033000572A76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258045072A57033000572A76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		252B5FC42A8C7A90001ED70F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2DCS9FT8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "machir.Liz-TRATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liz-TRA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Liz-TRA";
+			};
+			name = Debug;
+		};
+		252B5FC52A8C7A90001ED70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2DCS9FT8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "machir.Liz-TRATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liz-TRA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Liz-TRA";
+			};
+			name = Release;
+		};
+		2580450A2A57033000572A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2580450B2A57033000572A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2580450D2A57033000572A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47D9A6FAEBC33C42B182ECA /* Pods-Liz-TRA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Liz-TRA/Liz-TRA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2DCS9FT8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liz-TRA/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "machir.Liz-TRA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2580450E2A57033000572A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A4547B019302D2CA04FA61 /* Pods-Liz-TRA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Liz-TRA/Liz-TRA.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2DCS9FT8R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liz-TRA/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "machir.Liz-TRA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		252B5FC32A8C7A90001ED70F /* Build configuration list for PBXNativeTarget "Liz-TRATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252B5FC42A8C7A90001ED70F /* Debug */,
+				252B5FC52A8C7A90001ED70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		258044F32A57032E00572A76 /* Build configuration list for PBXProject "Liz-TRA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2580450A2A57033000572A76 /* Debug */,
+				2580450B2A57033000572A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2580450C2A57033000572A76 /* Build configuration list for PBXNativeTarget "Liz-TRA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2580450D2A57033000572A76 /* Debug */,
+				2580450E2A57033000572A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		255FB1492A5CFB5100C876F8 /* Liz-TRA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				255FB14A2A5CFB5100C876F8 /* Liz-TRA.xcdatamodel */,
+			);
+			currentVersion = 255FB14A2A5CFB5100C876F8 /* Liz-TRA.xcdatamodel */;
+			path = "Liz-TRA.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 258044F02A57032E00572A76 /* Project object */;
+}

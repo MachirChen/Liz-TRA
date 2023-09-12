@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TrainSchedule" representedClassName="TrainSchedule" syncable="YES" codeGenerationType="class">
+        <attribute name="arrivalId" optional="YES" attributeType="String"/>
+        <attribute name="arrivalStation" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="dateAndTime" optional="YES" attributeType="String"/>
+        <attribute name="departureId" optional="YES" attributeType="String"/>
+        <attribute name="departureStation" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
+    </entity>
+</model>

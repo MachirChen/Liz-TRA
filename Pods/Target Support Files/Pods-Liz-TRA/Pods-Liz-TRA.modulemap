@@ -1,0 +1,6 @@
+framework module Pods_Liz_TRA {
+  umbrella header "Pods-Liz-TRA-umbrella.h"
+
+  export *
+  module * { export * }
+}
