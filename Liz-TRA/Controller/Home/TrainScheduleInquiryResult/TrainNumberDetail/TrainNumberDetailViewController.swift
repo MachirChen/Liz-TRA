@@ -65,7 +65,7 @@ class TrainNumberDetailViewController: UIViewController {
     private func setupTableView() {
         tableView.frame = CGRect(x: 0, y: 0, width: UIScreen.width, height: UIScreen.height)
         tableView.dataSource = self
-        tableView.separatorColor = .lightGray
+        tableView.separatorColor = .separator
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0.0
         }

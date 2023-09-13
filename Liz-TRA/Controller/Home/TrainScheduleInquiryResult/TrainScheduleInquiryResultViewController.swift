@@ -33,64 +33,133 @@ class TrainScheduleInquiryResultViewController: UIViewController {
     
     // MARK: - Method
     
+//    private func fetchData() {
+//
+//        let group = DispatchGroup()
+//        let queue1 = DispatchQueue(label: "com.machir.queue1")
+//
+//        //step1先取得時刻表，step2再用時刻表direction抓fare
+//        //step1LiveBoard可以先抓資料，不影響先後問題
+//
+//        group.enter()
+//        queue1.async(group: group) {
+//            TrainScheduleManager.shared.fetchTrainSchedule(departureId: self.trainScheduleData[0].departureId!, arrivalId: self.trainScheduleData[0].arrivalId!, date: self.trainScheduleData[0].date!) { result in
+//                switch result {
+//                case .success(let trainSchedule):
+//                    self.trainScheduleInquiryResult = trainSchedule
+//                    self.filter(trainSchedule.trainTimetables)
+//                    if trainSchedule.trainTimetables.isEmpty {
+//                        let subLine = CityData.subLine
+//                        for i in 0..<subLine.count {
+//                            let currentSL = subLine[i]
+//                            for n in 0..<currentSL.stations.count {
+//                                if self.trainScheduleData[0].departureId! == currentSL.stations[n].id {
+//                                    break
+//                                }
+//                            }
+//                        }
+//                        self.showAlert()
+//                        return
+//                    }
+//                    group.enter()
+//                    TrainScheduleManager.shared.fetchTrainFare(departureId: self.trainScheduleData[0].departureId!, arrivalId: self.trainScheduleData[0].arrivalId!, direction: trainSchedule.trainTimetables[0].trainInfo.direction) { result in
+//                        switch result {
+//                        case .success(let fare):
+//                            self.fare = fare
+//                        case .failure(_):
+//                            self.showAlert()
+//                        }
+//                        group.leave()
+//                    }
+//
+//                    group.enter()
+//                    TrainScheduleManager.shared.fetchTrainLiveBoard { liveBoard in
+//                        self.liveboard = liveBoard
+//                        self.filter(liveBoard.trainLiveBoards)
+//                        group.leave()
+//                    }
+//                case .failure(_):
+//                    self.showAlert()
+//                }
+//                group.leave()
+//            }
+//        }
+//
+//        group.notify(queue: DispatchQueue.main) {
+//            self.tableView.reloadData()
+//            self.activityIndicator.stopAnimating()
+//            self.activityIndicator.hidesWhenStopped = true
+//        }
+//
+//    }
+    
     private func fetchData() {
-       
+
         let group = DispatchGroup()
         let queue1 = DispatchQueue(label: "com.machir.queue1")
-        
+        let queue2 = DispatchQueue(label: "com.machir.queue2")
+
+        //step1先取得時刻表，step2再用時刻表direction抓fare
+        //step1LiveBoard可以先抓資料，不影響先後問題
+        //時刻表&Live board排序比對可以測試放在main Thread可不可行？
         group.enter()
         queue1.async(group: group) {
             TrainScheduleManager.shared.fetchTrainSchedule(departureId: self.trainScheduleData[0].departureId!, arrivalId: self.trainScheduleData[0].arrivalId!, date: self.trainScheduleData[0].date!) { result in
                 switch result {
                 case .success(let trainSchedule):
-                    self.trainScheduleInquiryResult = trainSchedule
-                    self.filter(trainSchedule.trainTimetables)
-                    if trainSchedule.trainTimetables.isEmpty {
-                        let subLine = CityData.subLine
-                        for i in 0..<subLine.count {
-                            let currentSL = subLine[i]
-                            for n in 0..<currentSL.stations.count {
-                                if self.trainScheduleData[0].departureId! == currentSL.stations[n].id {
-                                    break
-                                }
+                    self.trainScheduleInquiryResult = trainSchedule //取得資料，但有可能是空
+                    if !trainSchedule.trainTimetables.isEmpty {
+                        TrainScheduleManager.shared.fetchTrainFare(departureId: self.trainScheduleData[0].departureId!, arrivalId: self.trainScheduleData[0].arrivalId!, direction: trainSchedule.trainTimetables[0].trainInfo.direction) { result in
+                            switch result {
+                            case .success(let fare):
+                                self.fare = fare
+                                print("queue1結束")
+                                group.leave()
+                            case .failure(_):
+                                self.showAlert()
+                                group.leave()
                             }
                         }
+                    } else {
                         self.showAlert()
-                        return
-                    }
-                    group.enter()
-                    TrainScheduleManager.shared.fetchTrainFare(departureId: self.trainScheduleData[0].departureId!, arrivalId: self.trainScheduleData[0].arrivalId!, direction: trainSchedule.trainTimetables[0].trainInfo.direction) { result in
-                        switch result {
-                        case .success(let fare):
-                            self.fare = fare
-                        case .failure(_):
-                            self.showAlert()
-                        }
-                        group.leave()
-                    }
-                    
-                    group.enter()
-                    TrainScheduleManager.shared.fetchTrainLiveBoard { liveBoard in
-                        self.liveboard = liveBoard
-                        self.filter(liveBoard.trainLiveBoards)
+                        print("抓不到時刻表，顯示alert")
                         group.leave()
                     }
                 case .failure(_):
                     self.showAlert()
+                    group.leave()
                 }
+            }
+        }
+        
+        group.enter()
+        queue2.async(group: group) {
+            TrainScheduleManager.shared.fetchTrainLiveBoard { liveBoard in
+                self.liveboard = liveBoard //到這裡fare已經有資料了
+                print("queue2結束")
                 group.leave()
             }
         }
         
         group.notify(queue: DispatchQueue.main) {
+            print("通知DispatchQueue.main")
+            guard let trainScheduleInquiryResult = self.trainScheduleInquiryResult, let liveboard = self.liveboard else { return }
+            self.filter(trainScheduleInquiryResult.trainTimetables) //這是時刻表排順序
+            guard !self.trainSchedule.isEmpty else {
+                self.showAlert()
+                return
+            }
+            self.filter(liveboard.trainLiveBoards) //這是過濾票價，有和時刻表比對，等等來研究
+            print("都filter完成才reloadData")
             self.tableView.reloadData()
             self.activityIndicator.stopAnimating()
             self.activityIndicator.hidesWhenStopped = true
         }
-        
+
     }
     
     private func filter(_ trainLiveBoard: [TrainLiveBoard]) {
+        print("後執行trainLiveBoard filter")
         var liveBoardData: [TrainLiveBoard] = []
         for i in 0..<self.trainSchedule.count {
             self.trainSchedule[i].trainInfo.delayTime = 0
@@ -140,7 +209,7 @@ class TrainScheduleInquiryResultViewController: UIViewController {
         tableView.register(TrainScheduleInquiryResultTableViewCell.self, forCellReuseIdentifier: TrainScheduleInquiryResultTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorColor = .lightGray
+        tableView.separatorColor = .separator
         view.addSubview(tableView)
     }
     
@@ -181,7 +250,7 @@ class TrainScheduleInquiryResultViewController: UIViewController {
         return travelTimeStr
         
     }
-    
+
     private func filter(_ data: [TrainTimetable]) {
         var filterData = data
         if isDepartureTime {
@@ -217,6 +286,7 @@ class TrainScheduleInquiryResultViewController: UIViewController {
             }
         }
         self.trainSchedule = sort
+        print("trainSchedule filter先結束")
     }
 
 }
@@ -231,6 +301,7 @@ extension TrainScheduleInquiryResultViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TrainScheduleInquiryResultTableViewCell.identifier, for: indexPath) as? TrainScheduleInquiryResultTableViewCell else { return UITableViewCell()}
         guard let fare = fare else { return UITableViewCell() }
+        guard !trainSchedule.isEmpty else { return UITableViewCell() }
         
         let data = trainSchedule[indexPath.row]
         for i in 0..<fare.oDFares.count {
@@ -241,12 +312,15 @@ extension TrainScheduleInquiryResultViewController: UITableViewDataSource {
         }
         cell.onTimeAndDelayLabel.text = "準點"
         cell.onTimeAndDelayLabel.textColor = .systemGray
-        if data.trainInfo.delayTime == 0 {
+        
+        guard let delayTime = data.trainInfo.delayTime else { return UITableViewCell() }
+        if delayTime == 0 {
             cell.onTimeAndDelayLabel.text = "準點"
         } else {
-            cell.onTimeAndDelayLabel.text = "晚\(data.trainInfo.delayTime!)分"
+            cell.onTimeAndDelayLabel.text = "晚\(delayTime)分"
             cell.onTimeAndDelayLabel.textColor = .systemRed
         }
+
         return cell
     }
 }

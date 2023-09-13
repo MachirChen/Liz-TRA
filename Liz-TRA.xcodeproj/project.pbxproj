@@ -62,7 +62,6 @@
 		2578331B2A7CDB1900E34AD4 /* JSONDecoder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578331A2A7CDB1900E34AD4 /* JSONDecoder+.swift */; };
 		258044FC2A57032E00572A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FB2A57032E00572A76 /* AppDelegate.swift */; };
 		258044FE2A57032E00572A76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FD2A57032E00572A76 /* SceneDelegate.swift */; };
-		258045002A57032E00572A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258044FF2A57032E00572A76 /* ViewController.swift */; };
 		258045032A57032E00572A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258045012A57032E00572A76 /* Main.storyboard */; };
 		258045052A57033000572A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 258045042A57033000572A76 /* Assets.xcassets */; };
 		258045082A57033000572A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258045062A57033000572A76 /* LaunchScreen.storyboard */; };
@@ -146,7 +145,6 @@
 		258044F82A57032E00572A76 /* Liz-TRA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liz-TRA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		258044FB2A57032E00572A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		258044FD2A57032E00572A76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		258044FF2A57032E00572A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		258045022A57032E00572A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		258045042A57033000572A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		258045072A57033000572A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -446,7 +444,6 @@
 				251D33432AB02F7B00FD0351 /* Other */,
 				258044FB2A57032E00572A76 /* AppDelegate.swift */,
 				258044FD2A57032E00572A76 /* SceneDelegate.swift */,
-				258044FF2A57032E00572A76 /* ViewController.swift */,
 				258045012A57032E00572A76 /* Main.storyboard */,
 				258045042A57033000572A76 /* Assets.xcassets */,
 				258045062A57033000572A76 /* LaunchScreen.storyboard */,
@@ -706,7 +703,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				251D33102AA5B34E00FD0351 /* EmailLogInViewController.swift in Sources */,
-				258045002A57032E00572A76 /* ViewController.swift in Sources */,
 				252B5FEB2A98BA16001ED70F /* AccountDataModel.swift in Sources */,
 				25CCC2992A67D84100136F82 /* TokenManager.swift in Sources */,
 				252B5FB82A861FEB001ED70F /* TrainLiveBoardDataModel.swift in Sources */,
@@ -840,6 +836,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -900,6 +897,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

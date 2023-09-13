@@ -7,7 +7,6 @@
 
 import UIKit
 import SnapKit
-import JGProgressHUD
 
 //這個controller已整理完2023.09.08。
 class ProfileViewController: UIViewController {
@@ -26,11 +25,6 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let hud = JGProgressHUD()
-//        hud.textLabel.text = "Loading"
-//        hud.show(in: UIApplication.shared.windows.last?.rootViewController?.view ?? self.view)
-//        hud.dismiss(afterDelay: 3.0)
-        //加入HUD開始，從JGProgressHUD開始，記得import framework
         fetchData()
         setupHeaderView()
         setupCollectionView()

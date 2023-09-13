@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        let barAppearance = UINavigationBarAppearance()
-        barAppearance.backgroundColor = .systemBackground
-        UINavigationBar.appearance().scrollEdgeAppearance = barAppearance
-        UINavigationBar.appearance().standardAppearance = barAppearance
+//        let barAppearance = UINavigationBarAppearance()
+//        barAppearance.configureWithDefaultBackground()
+//        UINavigationBar.appearance().scrollEdgeAppearance = barAppearance //捲動時，BackgroundColor由此控制
+//        UINavigationBar.appearance().standardAppearance = barAppearance  //不捲動時由此控制
         
         //Google設定
         GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
